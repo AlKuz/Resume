@@ -1,0 +1,38 @@
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{subfiles}
+\usepackage{paracol}
+\usepackage{biblatex}
+
+\pagestyle{fancy}
+\fancyhf{}
+\bibliographystyle{abbrv}
+
+
+\begin{document}
+
+    \lastupdated
+    \namesection{Aleksandr}{Kuznetsov}{
+        \urlstyle{same}
+    }
+    \columnratio{0.33}
+    \raggedright
+    \begin{paracol}{2}
+        \setlength{\columnsep}{8mm}
+
+        \section{Links}             \label{sec:links}           \subfile{sections/links.tex}
+        \section{Languages}         \label{sec:languages}       \subfile{sections/languages.tex}
+        \section{Skills}            \label{sec:skills}          \subfile{sections/skills.tex}
+        \section{Education}         \label{sec:education}       \subfile{sections/education.tex}
+        \section{Courses}           \label{sec:courses}         \subfile{sections/courses.tex}
+
+        \switchcolumn
+
+        \section{Career Summary}   \label{sec:summary}          \subfile{sections/summary.tex}
+        \section{Experience}        \label{sec:experience}      \subfile{sections/experience.tex}
+        \section{Projects}          \label{sec:projects}        \subfile{sections/projects.tex}
+
+    \end{paracol}
+
+\end{document}
